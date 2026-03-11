@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Мой Todo List</title>
+    <!-- <title>Мой Todo List</title> -->
+     <title>CSS and JS</title>
 </head>
 <body>
-    <div class="main-cont">
+    <!-- <div class="main-cont">
     <h1>Список задач</h1>
     <p>Добро пожаловать в мое первое веб-приложение!</p>
 
@@ -19,6 +20,25 @@
         <li>Создать репозиторий на GitHub</li>
     </ol>
 
-    </div>
+    </div> -->
+    <main class="app-conatiner">
+        <header>
+            <h1>Управление задачами</h1>
+        </header>
+        <section id="input-area" class="input-group">
+            <input type="text" id="task-name" placeholder="Наименование задачи ...">
+            <button type="button" id="add-btn">Добавить</button>
+        </section>
+        <section id="list-area">
+            <h2>Список текущих дел:</h2>
+            <div id="tasks-container">
+                <p class="task-item">1. Установка и настройка Visual Studio Code</p>
+                <p class="task-item">2. Инициализация репозитория Git</p>
+                <p class="task-item">3. Настройка расширения Live Server</p>
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
